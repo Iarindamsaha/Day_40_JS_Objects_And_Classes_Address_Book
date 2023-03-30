@@ -109,5 +109,15 @@ class Contacts {
             + " Email = " + this.email;
     }
 }
-    let contact1 = new Contacts("Arindam", "Saha", "MaheshColony", "Serampore", "WestBengal", "712202", "7980211558", "asaha15071998@gmail.com");
-    console.log(contact1.toString());
+
+    // let contact1 = new Contacts("Arindam", "Saha", "MaheshColony", "Serampore", "WestBengal", "712202", "7980211558", "asaha15071998@gmail.com");
+    // console.log(contact1.toString());
+
+//Array Creation
+let arr=new Array(new Contacts("Arindam", "Saha", "MaheshColony", "Serampore", "WestBengal", "712202", "7980211558", "asaha15071998@gmail.com"), 
+        new Contacts("Robin", "Das", "Taratala", "Kolkta", "WestBengal", "700005", "9911223345", "Robin@gmail.com"),
+        new Contacts("Isha", "Roy", "Gouribari", "Bidhannagar", "WestBengal", "700004", "9011234587", "isha@gmail.com"));
+   
+    for(let i=0; i<arr.length; i++){
+        console.log(arr[i].toString());
+    }
