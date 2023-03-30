@@ -166,7 +166,7 @@ function printArray() {
 deleteContacts();
 function deleteContacts() {
     let firstNamedelete = prompt4("Enter the First Name you like to delete:");
-    let check = false;
+    let check = true;
     check = contactChecker(firstNamedelete, check);
     if (check) {
         console.log("Sorry there is no name with this first name.");
@@ -189,3 +189,12 @@ function contactChecker(firstNamedelete, check) {
 
 }
 printArray();
+
+//Counting Contacts
+let count=countContacts();
+console.log("total count of contacts are: "+count)
+
+function countContacts(){
+    return arr.map(contact => contact._firstName)
+    .reduce((start,firstName)=>start+=1,0);
+}
