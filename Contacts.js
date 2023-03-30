@@ -199,6 +199,7 @@ function countContacts(){
     .reduce((start,firstName)=>start+=1,0);
 }
 
+//Search By City Or State
 searchPersonthroughCityorstate();
 function searchPersonthroughCityorstate() {
     let parameter = prompt4("Select Search Parameter 1. City 2. State :");
